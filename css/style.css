@@ -1,0 +1,181 @@
+div#topo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,.8);
+    z-index: 3;
+}
+#bars{
+    color: white;
+    font-size: 22px;
+    top: 10px;
+    background: none;
+    border: none;
+}
+header #menu{
+    position: fixed;
+    background-color:rgb(0,139,139);
+    top: 30px;
+    width: 230px;
+    height: 400px;
+    left: -80%;
+    transition: 1s;
+    z-index: 2;
+}
+header.open-menu #menu{
+    left: 0;
+}
+.logo{
+    background-color:rgb(173,216,230);
+    height: 70px;
+    margin-top: 30px;
+}
+.titulo{
+    text-align: center;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top:40px;
+    left: 40%;
+}
+
+img.logo-img{
+    width: 200px;
+    height: 50px;
+    margin:10px 0 0 40%;
+    background-color: white;
+}
+
+header.open-menu #menu li{
+    text-align: center;
+    border-bottom: 1px solid rgb(173,216,230);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+header.open-menu #menu li a{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    width: 59px;
+}
+header.open-menu #menu li a:hover{
+    color: red;
+    font-weight: bold;
+
+}
+header.open-menu .bar-close{
+    position: absolute;
+    bottom: 0;
+    background-color:rgb(173,216,230);
+    height: 40px;
+    width: 100%;
+}
+header.open-menu .bar-close .btn-close{
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 22px;
+}
+
+article{
+    min-height: 410px;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid #fff;
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    z-index: 1;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f7fab6;
+}
+.form-control{
+    background-color: #e7f0ef !important;
+}
+.move-menu{
+    margin-left: 240px !important;
+}
+
+footer{
+    background-color:rgb(173,216,230);
+    height: 120px;
+    width: 100%;
+    z-index: 1;
+}
+.copy{
+    padding-top:60px;
+    display: block;
+    font-family: 'Raleway', sans-serif;/*}*/
+    color: black;
+}
+img{
+    margin-left:135px;
+}
+#login{
+    width:500px;
+    margin:0 auto;
+    padding:40px 20px 20px 20px;
+    margin-top:120px;
+    background-color: #fff;
+    border-radius: 5px;
+    border:2px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.corFundo{
+    background-color: #9acfea;
+}
+/*
+.login{
+    background:rgb(32,178,170);
+    moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:345px;
+    margin:0 auto;
+    padding:40px 20px 20px 20px;
+    margin-top:40px;
+}
+.login input{
+    width:280px;
+    padding:10px;
+}
+.login button{
+    border:none;
+    background:rgb(240,248,255);
+    font-size:24px;
+    padding:10px 20px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom:2px rgb(240,248,255) solid;
+    margin-top: 20px;
+}
+.login button:hover{
+    background:#FF7E28;
+    border-bottom:2px #BB4A00 solid;
+    color:#fff;
+}*/
+.cadLodin{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+}
+.cadLodin a{
+    text-decoration: none;
+    color: #4cae4c;
+
+}
