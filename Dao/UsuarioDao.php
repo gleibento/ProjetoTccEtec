@@ -259,7 +259,8 @@ class UsuarioDao {
     public function cadastrar(){
         $sql = "INSERT INTO usuario(usu_sus,usu_cpf,usu_nome,usu_dtnasc,usu_genero,usu_tp_sangue,usu_naturalidade,"
                 . "usu_nacionalidade,usu_mae,usu_pai,usu_rg,usu_rg_dtexped,usu_rg_orgexped, usu_cep,usu_tipo_logradouro,"
-                . "usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,usu_recado,usu_obs)VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                . "usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,"
+                . "usu_recado,usu_obs)VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stm = Conexao::prepare($sql);
         $stm->bindValue(1,$this->getUsu_sus());
         $stm->bindValue(2,$this->getUsu_cpf());
@@ -270,23 +271,24 @@ class UsuarioDao {
         $stm->bindValue(7,$this->getUsu_naturalidade());
         $stm->bindValue(8,$this->getUsu_nacionalidade());
         $stm->bindValue(9,$this->getUsu_mae());
-        $stm->bindValue(10,$this->);
-        $stm->bindValue(11,$this->);
-        $stm->bindValue(12,$this->);
-        $stm->bindValue(13,$this->);
-        $stm->bindValue(14,$this->);
-        $stm->bindValue(15,$this->);
-        $stm->bindValue(16,$this->);
-        $stm->bindValue(17,$this->);
-        $stm->bindValue(18,$this->);
-        $stm->bindValue(19,$this->);
-        $stm->bindValue(20,$this->);
-        $stm->bindValue(21,$this->);
-        $stm->bindValue(22,$this->);
-        $stm->bindValue(23,$this->);
-        $stm->bindValue(24,$this->);
-        $stm->bindValue(25,$this->);
-        $stm->bindValue(26,$this->);
-        $stm->bindValue(27,$this->);
+        $stm->bindValue(10,$this->getUsu_pai());
+        $stm->bindValue(11,$this->getUsu_rg());
+        $stm->bindValue(12,$this->getUsu_rg_dtexped());
+        $stm->bindValue(13,$this->getUsu_rg_orgexped());
+        $stm->bindValue(14,$this->getUsu_cep());
+        $stm->bindValue(15,$this->getUsu_tipo_logradouro());
+        $stm->bindValue(16,$this->getUsu_logradouro());
+        $stm->bindValue(17,$this->getUsu_num());
+        $stm->bindValue(18,$this->getUsu_complemento());
+        $stm->bindValue(19,$this->getUsu_bairro());
+        $stm->bindValue(20,$this->getUsu_cidade());
+        $stm->bindValue(21,$this->getUsu_uf());
+        $stm->bindValue(22,$this->getUsu_email());
+        $stm->bindValue(23,$this->getUsu_tel());
+        $stm->bindValue(24,$this->getUsu_cel1());
+        $stm->bindValue(25,$this->getUsu_cel2());
+        $stm->bindValue(26,$this->getUsu_recado());
+        $stm->bindValue(27,$this->getUsu_obs());
+        return $stm->execute();
     }
 }
