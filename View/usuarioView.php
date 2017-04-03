@@ -128,7 +128,7 @@
             </div>
             <div class="form-group col-md-7">
                 <label for="usu_obs">Observação</label>
-                <input type="text" name="usu_obs" class="form-control" id="usu_obs">
+                <textarea name="usu_obs" id="usu_obs" class="form-control" style="resize: none;" ></textarea>
             </div>
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>

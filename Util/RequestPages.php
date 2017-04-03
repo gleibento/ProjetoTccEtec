@@ -6,25 +6,26 @@
  * Time: 21:59
  */
 $pagina = filter_input(INPUT_GET, "pagina", FILTER_SANITIZE_STRING);
-
-$arrayPaginas = array(
-    "home" => "../View/home.php",
-    "usuario" => "../View/cadUsuario.php"
-);
-
-if ($pagina) {
-    $encontrou = false;
-
-    foreach ($arrayPaginas as $page => $key) {
-        if ($pagina == $page) {
-            $encontrou = true;
-            require_once($key);
-        }
+if (!isset($pagina)){
+    include_once ("../View/home.php");
+}else{
+    switch ($pagina){
+        default:
+            include_once ("../View/home.php");
+            break;
+        case "usuario":
+            include_once ("../View/usuarioView.php");
+            break;
+        case "profissional":
+            include_once ("../View/profissionalView.php");
+            break;
+        case "pesquisa":
+            include_once ("../View/pesquisasView.php");
+            break;
+        case "listar":
+            include_once ("../View/profissionalList.php");
+            break;
     }
-
-    if (!$encontrou) {
-        require_once("../View/home.php");
-    }
-} else {
-    require_once("../View/home.php");
 }
+
+

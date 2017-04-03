@@ -3,7 +3,6 @@ body {
 }
 .jumbotron{
     min-height: 580px;
-    background-color: #fff !important;
 }
 nav ul li a{
     color: #000;
@@ -42,7 +41,7 @@ img {
 }
 
 .corFundo {
-    background-color: #46b8da;
+    background-color: #9acfea;
 }
 
 /*

@@ -1,14 +1,19 @@
 $(function () {
-    var menu = $('.open-menu');
-    $('#bars').click(function () {
-        menu.fadeToggle("fast");
-        $('article').toggleClass('move-menu');
-        $('.form').show("slow");
+   $('.sub').menu();
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active');
     });
-    $('.bar-close .btn-close').click(function () {
-        menu.hide("fast");
-        $('article').toggleClass('move-menu');
-    });
+   
+    /*var menu = $('.open-menu');
+     $('#bars').click(function () {
+     menu.fadeToggle("fast");
+     $('article').toggleClass('move-menu');
+     $('.form').show("slow");
+     });
+     $('.bar-close .btn-close').click(function () {
+     menu.hide("fast");
+     $('article').toggleClass('move-menu');
+     });*/
 
 //função para carregar endereços de caordo com o cep
     function limpa_formulário_cep() {
@@ -35,6 +40,7 @@ $(function () {
             if (validacep.test(cep)) {
 
                 //Preenche os campos com "..." enquanto consulta webservice.
+
                 $("#usu_logradouro").val("  ........... ");
                 $("#usu_bairro").val("  ........... ");
                 $("#usu_cidade").val("  ........... ");
@@ -75,47 +81,30 @@ $(function () {
     $("#usu_cel2").mask("(99) 9 9999-9999", {placeholder: "(  )    -    "});
     $("#usu_tel").mask("(##)####-####", {placeholder: "(  )    -    "});
     $("#usu_dtnasc").mask("##/##/####", {placeholder: "dd/mm/aaaa"});
-    $("#usu_dtExpdicao").mask("##/##/####", {placeholder: "dd/mm/aaaa"});
+    $("#usu_dtexpedicao").mask("##/##/####", {placeholder: "dd/mm/aaaa"});
     $("#usu_cep").mask("#####-###", {placeholder: "     -   "});
 
+    $("#pro_cpf").mask("999.999.999-99", {placeholder: "   .   .   -  "});
+    $('form input').focusin(function () {
+        $(this).addClass('item-focado');
+    });
+    $('form input').focusout(function () {
+        $(this).removeClass('item-focado');
+    });
+    $('select').focusin(function () {
+        $(this).addClass('item-focado');
+    })
+    $('select').focusout(function () {
+        $(this).removeClass('item-focado');
+    });
     /*$('#myModal').on('shown.bs.modal', function () {
      $('#myInput').focus()
      })
      */
-   /* var resposta = $('.resposta');
-    var action = "../Dao/ExecutarForms.php";
-    var enviar = $('.enviar');
+    /*
+     */
 
-    function carregando(datas) {
-        resposta.empty().html('<img src="../img/load.gif');
-    }
-    function sucesso(datas) {
-        resposta.empty().html(data);
-    }
-    function erro(datas) {
-        resposta.empty().html('Erro ao logar');
-    }
-    function completo(datas) {
-        window.setTimeout(function () {
-            resposta.empty().html('Enviado com sucesso');
-        },2000);
-
-    }
-    enviar.submit(function () {
-        $.ajax({
-            type: 'post',
-            url: action,
-            data: $(this).serialize(),
-            beforeSend: carregando,
-            erro:erro,
-            success:sucesso,
-            complete:completo
-        });
-        return false;
-    });
-*/
 });
-
 
 
 
