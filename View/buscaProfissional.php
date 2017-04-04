@@ -1,6 +1,9 @@
 <?php
 include_once '../crud/ProfissionalCrud.php';
 $cpf = filter_input(INPUT_POST, "palavra", FILTER_SANITIZE_MAGIC_QUOTES);
+if (empty($cpf)) {
+     echo "<div class='alert alert-danger'>impossivel pesquisar campo vazio</div>";
+}  else {
 $profi = new ProfissionalCrud();
 $profissional = $profi->find($cpf);
 if ($profissional != "") {
@@ -33,5 +36,5 @@ if ($profissional != "") {
 } else {
     echo "<div class='alert alert-danger'>Nada encontrado</div>";
 }
-
+}
 

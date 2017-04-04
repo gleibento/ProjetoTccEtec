@@ -11,7 +11,7 @@
         <div role="tabpanel" class="tab-pane active" id="usuario">
             <div class="row" style="margin-top: 15px;">
                 <div class="form-group col-md-11">
-                    <input type="text" class="form-control" id="usu_sus">
+                    <input type="text" class="form-control" id="usu_sus" placeholder="Digite o nome do usuario  ">
                 </div>
                 <div class="form-group col-md-1">
                     <button type="button" id="search" class="form-control btn btn-info"><i class="fa fa-search"></i></button>
@@ -25,7 +25,7 @@
                     <input type="text" class="form-control" id="palavra" placeholder="Digite o nome ou CPF">
                 </div>
                 <div class="form-group col-md-1">
-                    <button class="btn btn-primary" id="buscar" type="button"><i class="fa fa-search"></i></button>
+                    <button class="form-control btn btn-primary" id="buscar" type="button"><i class="fa fa-search"></i></button>
                 </div> 
             </div>
             <div id="dados"></div>
