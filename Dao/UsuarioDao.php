@@ -257,17 +257,19 @@ class UsuarioDao {
         $this->usu_obs = $usu_obs;
     }
     public function cadastrar(){
-        $sql = "INSERT INTO usuario(usu_sus,usu_cpf,usu_nome,usu_dtnasc,usu_genero,usu_tp_sangue,usu_naturalidade,usu_nacionalidade,usu_mae,usu_pai,usu_rg,usu_rg_dtexped,usu_rg_orgexped, usu_cep,usu_tipo_logradouro,usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,usu_recado,usu_obs)VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO usuario(usu_sus,usu_cpf,usu_nome,usu_dtnasc,usu_genero,usu_tp_sangue,usu_naturalidade,"
+                . "usu_nacionalidade,usu_mae,usu_pai,usu_rg,usu_rg_dtexped,usu_rg_orgexped, usu_cep,usu_tipo_logradouro,"
+                . "usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,usu_recado,usu_obs)VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stm = Conexao::prepare($sql);
-        $stm->bindValue(1,$this->);
-        $stm->bindValue(2,$this->);
-        $stm->bindValue(3,$this->);
-        $stm->bindValue(4,$this->);
-        $stm->bindValue(5,$this->);
-        $stm->bindValue(6,$this->);
-        $stm->bindValue(7,$this->);
-        $stm->bindValue(8,$this->);
-        $stm->bindValue(9,$this->);
+        $stm->bindValue(1,$this->getUsu_sus());
+        $stm->bindValue(2,$this->getUsu_cpf());
+        $stm->bindValue(3,$this->getUsu_nome());
+        $stm->bindValue(4,$this->getUsu_dtnasc());
+        $stm->bindValue(5,$this->getUsu_genero());
+        $stm->bindValue(6,$this->getUsu_tp_sangue());
+        $stm->bindValue(7,$this->getUsu_naturalidade());
+        $stm->bindValue(8,$this->getUsu_nacionalidade());
+        $stm->bindValue(9,$this->getUsu_mae());
         $stm->bindValue(10,$this->);
         $stm->bindValue(11,$this->);
         $stm->bindValue(12,$this->);
