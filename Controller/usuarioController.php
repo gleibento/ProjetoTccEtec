@@ -27,4 +27,33 @@ $usu_cel1 = filter_input(INPUT_POST, "usu_cel1", FILTER_SANITIZE_MAGIC_QUOTES);
 $usu_cel2 = filter_input(INPUT_POST, "usu_cel2", FILTER_SANITIZE_MAGIC_QUOTES);
 $usu_recado = filter_input(INPUT_POST, "usu_recado", FILTER_SANITIZE_MAGIC_QUOTES);
 $usu_obs = filter_input(INPUT_POST, "usu_obs", FILTER_SANITIZE_MAGIC_QUOTES);
-
+if(isset(filter_input(INPUT_POST,"cadastrar", FILTER_SANITIZE_MAGIC_QUOTES))){
+    $usuCad = new UsuarioCrud();
+    $usuCad->setUsu_sus($usu_sus);
+    $usuCad->setUsu_cpf($usu_cpf);
+    $usuCad->setUsu_nome($usu_nome);
+    $usuCad->setUsu_dtnasc($usu_dtnasc);
+    $usuCad->setUsu_genero($usu_genero);
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+    $usuCad->
+}

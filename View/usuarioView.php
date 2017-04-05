@@ -1,4 +1,4 @@
-    <form method="post" action="">
+<form method="post" action="../controller/usuarioController.php">
         <div class="row">
             <fieldset>
                 <legend>Dados Pessoais</legend>
