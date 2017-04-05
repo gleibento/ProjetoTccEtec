@@ -1,6 +1,7 @@
     <form method="post" action="">
-
         <div class="row">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
             <div class="form-group col-md-3">
                 <label for="usu_sus">SUS</label>
                 <input type="text" name="usu_sus" class="form-control" id="usu-sus">
@@ -92,6 +93,9 @@
                 <input type="text" name="usu_pai" class="form-control" id="usu_pai">
             </div>
             <!--              -->
+            </fieldset>
+            <fieldset>
+                <legend>Dados complementares</legend>
             <div class="form-group col-md-2">
                 <label for="cep">Cep</label>
                 <input type="text" name="usu_cep" class="form-control" id="usu_cep">
@@ -130,6 +134,7 @@
                 <label for="usu_obs">Observação</label>
                 <textarea name="usu_obs" id="usu_obs" class="form-control" style="resize: none;" ></textarea>
             </div>
+            </fieldset>
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
                 <button type="reset" class="btn btn-danger">Cancelar</button>

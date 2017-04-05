@@ -8,4 +8,4 @@
 define("DB_ROST","127.0.0.1");
 define("DB_NAME","medicina");
 define("DB_USUARIO","root");
-define("DB_PASSWORD","");
+define("DB_PASSWORD","53462100");

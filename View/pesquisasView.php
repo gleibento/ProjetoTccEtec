@@ -11,7 +11,7 @@
         <div role="tabpanel" class="tab-pane active" id="usuario">
             <div class="row" style="margin-top: 15px;">
                 <div class="form-group col-md-11">
-                    <input type="text" class="form-control" id="usu_sus" placeholder="Digite o nome do usuario  ">
+                    <input type="text" class="form-control" id="usu_sus" placeholder="Digite o nome do usuario">
                 </div>
                 <div class="form-group col-md-1">
                     <button type="button" id="search" class="form-control btn btn-info"><i class="fa fa-search"></i></button>
