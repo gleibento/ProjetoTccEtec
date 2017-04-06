@@ -48,5 +48,5 @@
 
 </div>
 <script type="text/javascript" src="../js/lib/jquery.js"></script>
-<script type="text/javascript" src="../js/usuarioAjax.js"></script>
-<script type="text/javascript" src="../js/profissionalAjax.js"></script>
+<script type="text/javascript" src="../js/usuarioBuscaAjax.js"></script>
+<script type="text/javascript" src="../js/profissionaBuscaAjax.js"></script>

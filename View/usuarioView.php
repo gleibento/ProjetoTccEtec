@@ -135,8 +135,9 @@
                 <textarea name="usu_obs" id="usu_obs" class="form-control" style="resize: none;" ></textarea>
             </div>
             </fieldset>
+            <input type="hidden" name="acao" value="cadastrar"/>
             <div class="col-md-12">
-                <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
                 <button type="reset" class="btn btn-danger">Cancelar</button>
             </div>
         </div>
