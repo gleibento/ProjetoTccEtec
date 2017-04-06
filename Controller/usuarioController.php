@@ -34,26 +34,29 @@ if(isset(filter_input(INPUT_POST,"cadastrar", FILTER_SANITIZE_MAGIC_QUOTES))){
     $usuCad->setUsu_nome($usu_nome);
     $usuCad->setUsu_dtnasc($usu_dtnasc);
     $usuCad->setUsu_genero($usu_genero);
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
-    $usuCad->
+    $usuCad->setUsu_tp_sangue($usu_tp_sangue);
+    $usuCad->setUsu_naturalidade($usu_naturalidade);
+    $usuCad->setUsu_nacionalidade($usu_nacionalidade);
+    $usuCad->setUsu_mae($usu_mae);
+    $usuCad->setUsu_pai($usu_pai);
+    $usuCad->setUsu_rg($usu_rg);
+    $usuCad->setUsu_rg_dtexped($usu_rg_dtexped);
+    $usuCad->setUsu_rg_orgexped($usu_rg_orgexped);
+    $usuCad->setUsu_cep($usu_cep);
+    $usuCad->setUsu_tipo_logradouro($usu_tipo_logradouro);
+    $usuCad->setUsu_logradouro($usu_logradouro);
+    $usuCad->setUsu_num($usu_num);
+    $usuCad->setUsu_complemento($usu_complemento);
+    $usuCad->setUsu_bairro($usu_bairro);
+    $usuCad->setUsu_cidade($usu_cidade);
+    $usuCad->setUsu_uf($usu_uf);
+    $usuCad->setUsu_email($usu_email);
+    $usuCad->setUsu_tel($usu_tel);
+    $usuCad->setUsu_cel1($usu_cel1);
+    $usuCad->setUsu_cel2($usu_cel2);
+    $usuCad->setUsu_recado($usu_recado);
+    $usuCad->setUsu_obs($usu_obs);
+    if ($usuCad->cadastrar()) {
+        
+    }
 }
