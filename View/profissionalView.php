@@ -1,4 +1,4 @@
-<form method="post" action="../Controller/profissionalController.php">
+<form method="post" name="profissional">
     <div class="row">
         <div class="form-group col-md-3">
             <label for="usu_sus">CPF</label>
@@ -31,8 +31,12 @@
                 <input type="password" name="pro_conf_senha" class="form-control" id="password">
             </div>
         </div>
+        <input type="hidden" name="acao" value="cadastrar"/>
         <div class="form-group col-md-12">
-            <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+            <button type="button" class="btn btn-primary" id="cad">Cadastrar</button>
         </div>
+         <div class="col-md-6" id="resposta"></div>
     </div>
 </form>
+<script type="text/javascript" src="../js/lib/jquery.js"></script>
+<script type="text/javascript" src="../js/cadProfissionalAjax.js"></script>

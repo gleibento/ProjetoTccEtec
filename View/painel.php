@@ -33,20 +33,24 @@ if (isset($_SESSION['nome'])) {
                                 <a href="#" data-toggle="dropdown" role="button"><i class="fa fa-check"></i>  Cadastros<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="painel.php?pagina=usuario"><i class="fa fa-user"></i>  Usuarios</a></li>
-                                    <li><a href="#"><i class="fa fa-user-md"></i>  Profissionais</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="painel.php?pagina=profissional"><i class="fa fa-user-md"></i>  Profissionais</a></li>
+                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">Something else here</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">Separated link</a></li>
+                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
                             <li><a href="#contact" data-toggle="dropdown" role="button"><i class="fa fa-search"></i>  Pesquisas<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="painel.php?pagina=pesquisa">Usuarios</a></li>
+                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">Profissionais</a></li>
-                                    <li><a href="#">Something else here</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">Separated link</a></li>
+                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>

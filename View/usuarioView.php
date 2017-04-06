@@ -1,4 +1,5 @@
-<form method="post" action="../controller/usuarioController.php">
+<meta charset='utf-8'>;
+<form method="post" name="cadastro">
         <div class="row">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -76,7 +77,7 @@
                 <input type="text" name="usu_rg" class="form-control" id="usu_rg">
             </div>
             <div class="form-group col-md-3">
-                <label for="telefone">Data Expedição</label>
+                <label for="usu_dtexpedicao">Data Expedição</label>
                 <input type="text" name="usu_dtexpedicao" class="form-control" id="usu_dtexpedicao">
             </div>
             <!--              -->
@@ -136,9 +137,12 @@
             </div>
             </fieldset>
             <input type="hidden" name="acao" value="cadastrar"/>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <div class="col-md-4">
+                <button type="button" id="cadastrar" class="btn btn-primary">Cadastrar</button>
                 <button type="reset" class="btn btn-danger">Cancelar</button>
             </div>
+            <div class="col-md-6" id="resposta"></div>
         </div>
     </form>
+<script type="text/javascript" src="../js/lib/jquery.js"></script>
+<script type="text/javascript" src="../js/cadUsuarioAjax.js"></script>

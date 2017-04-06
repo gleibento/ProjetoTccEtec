@@ -184,7 +184,7 @@ class ProfissionalCrud extends Conexao
     public function insert()
     {
         try {
-            $sql = "INSERT INTO profissional(pro_cpf, pro_nome, pro_genero, pro_login, pro_senha,conf_senha) VALUES (?,?,?,?,?,?)";
+            $sql = "INSERT INTO profissional(pro_cpf, pro_nome, pro_genero, pro_login, pro_senha,pro_conf_senha) VALUES (?,?,?,?,?,?)";
             $stm = Conexao::prepare($sql);
             $stm->bindValue(1, $this->getProCpf());
             $stm->bindValue(2, $this->getProNome());

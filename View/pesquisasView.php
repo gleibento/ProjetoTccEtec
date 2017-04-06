@@ -33,13 +33,13 @@
         <div role="tabpanel" class="tab-pane" id="prontuario">
             <div class="row" style="margin-top: 15px;">
                 <div class="form-group col-md-11">
-                    <input type="text" class="form-control" id="palavra" placeholder="Digite o nome do profissional">
+                    <input type="text" class="form-control" id="sus" placeholder="Digite o numero do sus">
                 </div>
                 <div class="form-group col-md-1">
-                    <button class="btn btn-success" id="buscar" type="button"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-success" id="protuario" type="button"><i class="fa fa-search"></i></button>
                 </div> 
             </div>
-            <div id="resposta"></div>
+            <div id="msg"></div>
         </div>
         <div role="tabpanel" class="tab-pane" id="settings">
 
@@ -50,3 +50,4 @@
 <script type="text/javascript" src="../js/lib/jquery.js"></script>
 <script type="text/javascript" src="../js/usuarioBuscaAjax.js"></script>
 <script type="text/javascript" src="../js/profissionaBuscaAjax.js"></script>
+<script type="text/javascript" src="../js/prontuarioAjax.js"></script>
