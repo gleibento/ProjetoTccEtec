@@ -80,6 +80,7 @@ if (isset($_SESSION['nome'])) {
     </html>
     <?php
 } else {
+    echo "<meta charset='utf-8'>";
     ?>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css"/>
     <img src="../admin/img/load.gif" style="margin: 150px 0 0 450px; ">

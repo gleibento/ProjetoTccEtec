@@ -6,6 +6,7 @@
  * Date: 23/03/2017
  * Time: 12:40
  */
+ echo "<meta charset='utf-8'>";
 include_once("../Dao/ProfissionalDao.php");
 $usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_MAGIC_QUOTES);
 $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_MAGIC_QUOTES);
