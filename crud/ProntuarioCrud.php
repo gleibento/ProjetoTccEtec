@@ -16,10 +16,10 @@ class ProntuarioCrud {
 
     public function find($param) {
         $sql = "SELECT usuario.usu_sus, usuario.usu_nome,usuario.usu_mae, profissional.pro_nome,
-atendimento.ate_tp_consulta , e_data ,solicita_exame.exa_pedido,exame.exa_nome,usuario.usu_obs 
+atendimento.ate_tp_consulta, atendimento.ate_data, solicita_exame.exa_pedido, exame.exa_nome,usuario.usu_obs 
 from usuario 
 inner join prontuario 
-on usuario.? = prontuario.usu_sus 
+on usuario.usu_sus = prontuario.usu_sus 
 inner join profissional 
 on profissional.pro_cpf = prontuario.pro_cpf 
 inner join atendimento 

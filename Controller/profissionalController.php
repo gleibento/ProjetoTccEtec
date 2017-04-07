@@ -37,7 +37,7 @@ if (isset($_POST['acao']) && isset($_POST['acao']) == "cadastrar") {
         $cad->setProSenha($pro_senha);
         $cad->setProConfSenha($pro_conf_senha);
         if ($cad->insert()) {
-            echo '<div class="alert alert-success">As senhas devem ser iguais</div>';
+            echo '<div class="alert alert-success">Cadastrado com sucesso</div>';
         } else {
             echo "Erro ao cadastrar";
         }

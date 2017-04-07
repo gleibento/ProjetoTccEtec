@@ -1,4 +1,3 @@
-<meta charset='utf-8'>;
 <form method="post" name="cadastro">
         <div class="row">
             <fieldset>
