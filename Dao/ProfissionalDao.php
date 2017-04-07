@@ -199,7 +199,6 @@ class ProfissionalDao
             echo $ex->getMessage();
         }
     }
-
     /**
      *
      */

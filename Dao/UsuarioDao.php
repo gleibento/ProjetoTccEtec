@@ -11,6 +11,7 @@
  *
  * @author glei-
  */
+ include_once("Conexao.php");
 class UsuarioDao {
     private $usu_sus;
     private $usu_cpf;
@@ -254,5 +255,9 @@ class UsuarioDao {
 
     function setUsu_obs($usu_obs) {
         $this->usu_obs = $usu_obs;
+    }
+    public function cadastrar(){
+        $sql = "INSERT INTO usuario(usu_sus,usu_cpf,usu_nome,usu_dtnasc,usu_genero,usu_tp_sangue,usu_naturalidade,usu_nacionalidade,usu_mae,usu_pai,usu_rg,usu_rg_dtexped,usu_rg_orgexped, usu_cep,usu_tipo_logradouro,usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,usu_recado,usu_obs)VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        
     }
 }

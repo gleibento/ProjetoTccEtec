@@ -19,7 +19,7 @@ if ($usuario != "" && $senha != ""){
 ?>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css"/>
 <script>
- window.setTimeout("location.href='../Admin/index.php'", 1000);
+ window.setTimeout("location.href='../index.php'", 1000);
 </script>
 <div class="alert alert-danger" style="width: 50%;height: 80px;text-align: center;margin-left: 250px">
     Nenhum usuario encontrado com esses dados
