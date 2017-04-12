@@ -249,7 +249,6 @@ class UsuarioCrud extends Conexao {
     }
 
     public function cadastrar() {
-        echo "<meta charset='utf-8'>";
         $sql = "INSERT INTO usuario(usu_sus,usu_cpf,usu_nome,usu_dtnasc,usu_genero,usu_tp_sangue,usu_naturalidade,"
                 . "usu_nacionalidade,usu_mae,usu_pai,usu_rg,usu_rg_dtexped,usu_rg_orgexped, usu_cep,usu_tipo_logradouro,"
                 . "usu_logradouro,usu_num,usu_complemento,usu_bairro,usu_cidade,usu_uf,usu_email,usu_tel,usu_cel1,usu_cel2,"

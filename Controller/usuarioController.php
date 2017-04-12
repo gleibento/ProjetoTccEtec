@@ -1,9 +1,10 @@
 <?php
+
 //aqui recebe todos os dados do formulario usuario 
 echo "<meta charset='utf-8'>";
 require_once '../crud/UsuarioCrud.php';
 if (isset($_POST['acao']) && isset($_POST['acao']) == "cadastrar") {
-    $usu_sus = trim(filter_input(INPUT_POST, "usu_sus", FILTER_SANITIZE_MAGIC_QUOTES));
+    $usu_sus= trim(filter_input(INPUT_POST, "usu_sus", FILTER_SANITIZE_MAGIC_QUOTES));
     $usu_cpf = trim(filter_input(INPUT_POST, "usu_cpf", FILTER_SANITIZE_MAGIC_QUOTES));
     $usu_nome = trim(filter_input(INPUT_POST, "usu_nome", FILTER_SANITIZE_MAGIC_QUOTES));
     $usu_dtnasc = trim(filter_input(INPUT_POST, "usu_dtnasc", FILTER_SANITIZE_MAGIC_QUOTES));
@@ -32,62 +33,63 @@ if (isset($_POST['acao']) && isset($_POST['acao']) == "cadastrar") {
     $usu_obs = trim(filter_input(INPUT_POST, "usu_obs", FILTER_SANITIZE_MAGIC_QUOTES));
     if (empty($usu_sus)) {
         echo '<div class="alert alert-danger">Campo numero sus em branco</div>';
+        
     } elseif (empty($usu_cpf)) {
-        echo 'Campo cpf em branco';
+        echo '<div class="alert alert-danger">Campo cpf em branco</div>';
     } elseif (empty($usu_nome)) {
-        echo 'Campo nome em branco';
+        echo '<div class="alert alert-danger">Campo nome em branco</div>';
     } else if (empty($usu_email)) {
-        echo 'Campo email em branco';
+        echo '<div class="alert alert-danger">Campo email em branco</div>';
     } elseif (empty($usu_tel)) {
-        echo 'Campo telefone em branco';
+        echo '<div class="alert alert-danger">Campo telefone em branco</div>';
     } elseif (empty($usu_cel1)) {
         echo '<div class="alert alert-danger">Campo celular1 em branco</div>';
     } elseif (empty($usu_cel2)) {
-        echo 'Campo celular2 em branco';
+        echo '<div class="alert alert-danger">Campo celular2 em branco</div>';
     } elseif (empty($usu_recado)) {
-        echo 'Campo telefone recado em branco';
+        echo '<div class="alert alert-danger">Campo telefone recado em branco</div>';
     } elseif (empty($usu_genero)) {
-        echo 'Campo genero em branco';
+        echo '<div class="alert alert-danger">Campo genero em branco</div>';
     } elseif (empty($usu_tp_sangue)) {
-        echo 'Campo tipo sangue em branco';
+        echo '<div class="alert alert-danger">Campo tipo sangue em branco</div>';
     } elseif (empty($usu_dtnasc)) {
-        echo 'Campo data nascimento em branco';
+        echo '<div class="alert alert-danger">Campo data nascimento em branco</div>';
     } elseif (empty($usu_naturalidade)) {
-        echo 'Campo naturalidade em branco';
+        echo '<div class="alert alert-danger">Campo naturalidade em branco</div>';
     } elseif (empty($usu_nacionalidade)) {
-        echo 'Campo nacionalidade em branco';
+        echo '<div class="alert alert-danger">Campo nacionalidade em branco</div>';
     } elseif (empty($usu_rg)) {
-        echo 'Campo rg em branco';
+        echo '<div class="alert alert-danger">Campo rg em branco</div>';
     } elseif (empty($usu_rg_dtexped)) {
-        echo 'Campo data expedição em branco';
+        echo '<div class="alert alert-danger">Campo data expedição em branco</div>';
     } elseif (empty($usu_rg_orgexped)) {
-        echo 'Campo orgão emissor em branco';
+        echo '<div class="alert alert-danger">Campo orgão emissor em branco</div>';
     } elseif (empty($usu_mae)) {
-        echo 'Campo mãe em branco';
+        echo '<div class="alert alert-danger">Campo mãe em branco</div>';
     } elseif (empty($usu_pai)) {
-        echo 'Campo pai em branco';
+        echo '<div class="alert alert-danger">Campo pai em branco</div>';
     } elseif (empty($usu_cep)) {
-        echo 'Campo cep em branco';
+        echo '<div class="alert alert-danger">Campo cep em branco</div>';
     } elseif (empty($usu_logradouro)) {
-        echo 'Campo logradouro em branco';
+        echo '<div class="alert alert-danger">Campo logradouro em branco</div>';
     } elseif (empty($usu_num)) {
-        echo 'Campo numero em branco';
+        echo '<div class="alert alert-danger">Campo numero em branco</div>';
     } elseif (empty($usu_complemento)) {
-        echo 'Campo complemento em branco';
+        echo '<div class="alert alert-danger">Campo complemento em branco</div>';
     } elseif (empty($usu_bairro)) {
-        echo 'Campo bairro em branco';
+        echo '<div class="alert alert-danger">Campo bairro em branco</div>';
     } elseif (empty($usu_cidade)) {
-        echo 'Campo cidade em branco';
+        echo '<div class="alert alert-danger">Campo cidade em branco</div>';
     } elseif (empty($usu_uf)) {
-        echo 'Campo uf em branco';
+        echo '<div class="alert alert-danger">Campo uf em branco</div>';
     } elseif (empty($usu_tipo_logradouro)) {
-        echo 'Campo tipo logradouro em branco';
+        echo '<div class="alert alert-danger">Campo tipo logradouro em branco</div>';
     } elseif (empty($usu_obs)) {
-        echo 'Campo observação em branco';
+        echo '<div class="alert alert-danger">Campo observação em branco</div>';
     } else {
         $usuCad = new UsuarioCrud();
         $usuCad->setUsu_sus($usu_sus);
-        $usuCad->setUsu_cpf($usu_cpf);
+        $usuCad->setUsu_cpf($usu_cpf); 
         $usuCad->setUsu_nome($usu_nome);
         $usuCad->setUsu_dtnasc($usu_dtnasc);
         $usuCad->setUsu_genero($usu_genero);
@@ -114,7 +116,7 @@ if (isset($_POST['acao']) && isset($_POST['acao']) == "cadastrar") {
         $usuCad->setUsu_recado($usu_recado);
         $usuCad->setUsu_obs($usu_obs);
         if ($usuCad->cadastrar()) {
-            echo 'cadastrado com sucesso';
+            echo '<div class="alert alert-succes">dastrado com sucesso</div>';
         } else {
             echo 'Falha ao cadastrar';
         }

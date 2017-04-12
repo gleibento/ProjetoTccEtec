@@ -10,13 +10,13 @@ $(function () {
     function carregando() {
         msn.empty().html("<p class='load'><img src='../img/hourglass.gif'></p>").fadeIn("fast");
     }
-    
+
     var page = "../Controller/usuarioController.php";
     $.ajaxSetup({
         type: 'POST',
         dataType: 'html',
         url: page,
-        beforeSend:carregando()
+        beforeSend: carregando()
     });
     var cadastro = $('form[name="cadastro"]');
     cadastro.submit(function () {
@@ -28,8 +28,6 @@ $(function () {
             success: function (msg)
             {
                 $("#resposta").html(msg);
-            },complete: function () {
-                cadastro.find("input:text,input:date,input:tel,input:email").val("");
             }
 
         });

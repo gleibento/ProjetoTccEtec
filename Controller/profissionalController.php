@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: glei-
- * Date: 24/03/2017
- * Time: 23:54
- */
 include_once("../crud/ProfissionalCrud.php");
 if (isset($_POST['acao']) && isset($_POST['acao']) == "cadastrar") {
     $pro_cpf = filter_input(INPUT_POST, "pro_cpf", FILTER_SANITIZE_MAGIC_QUOTES);

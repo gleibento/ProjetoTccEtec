@@ -1,4 +1,4 @@
-<form method="post" name="cadastro">
+<form method="post" name="cadastro" id="usuario">
         <div class="row">
             <fieldset>
                 <legend>Dados Pessoais</legend>
